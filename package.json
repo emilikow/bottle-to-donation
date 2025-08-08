@@ -1,12 +1,15 @@
 {
   "name": "bottle-to-donation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=18.18"
   },
   "dependencies": {
     "react": "^18.2.0",

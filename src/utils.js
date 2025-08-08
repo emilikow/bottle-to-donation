@@ -5,7 +5,6 @@ export const destinations = [
 ];
 
 export const windows = [
-  // sample upcoming 2-hour windows
   { id:'w1', city:'even-yehuda', start:'2025-08-10T09:00:00+03:00', end:'2025-08-10T11:00:00+03:00' },
   { id:'w2', city:'even-yehuda', start:'2025-08-12T18:00:00+03:00', end:'2025-08-12T20:00:00+03:00' },
   { id:'w3', city:'even-yehuda', start:'2025-08-15T08:00:00+03:00', end:'2025-08-15T10:00:00+03:00' },
@@ -16,11 +15,8 @@ export function fmtRange(startISO, endISO){
   return s.toLocaleString([], { dateStyle:'medium', timeStyle:'short' }) + ' – ' + e.toLocaleTimeString([], { timeStyle:'short' });
 }
 
-export function isoNow(){ return new Date().toISOString(); }
-
 export function uid(){ return Math.random().toString(36).slice(2); }
 
-// Fake Tap-to-Identify: simple rule-based stub
 export function identifyBottle(fileName=''){
   const name = (fileName||'').toLowerCase();
   if(name.includes('milk') || name.includes('carton')) return { eligible:false, reason:'Milk/dairy containers are excluded.' };
