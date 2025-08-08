@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-image:
+      radial-gradient(1200px 600px at 10% -10%, rgba(96,165,250,.12), transparent 60%),
+      radial-gradient(1000px 500px at 110% 10%, rgba(34,197,94,.12), transparent 60%),
+      linear-gradient(180deg,#0b1020,#0b1020);
+  }
+}
+
+@layer components {
+  .card { @apply rounded-2xl border border-white/10 bg-slate-900/70 p-5 shadow; }
+  .btn { @apply inline-flex items-center gap-2 rounded-xl border border-white/20 bg-slate-800/60 px-4 py-2 transition hover:-translate-y-0.5 hover:border-white/30; }
+  .btn-primary { @apply border-transparent bg-green-500 text-slate-900 font-semibold shadow-glow; }
+  .badge { @apply rounded-full border border-blue-400/40 bg-blue-500/15 px-2.5 py-0.5 text-xs text-blue-100; }
+  .pill { @apply rounded-full border border-white/15 px-3 py-1 text-sm; }
+  .hero { @apply card border-blue-400/40 bg-slate-900/60; }
+  .kpi { @apply grid grid-cols-3 gap-3; }
+  .kpi .stat { @apply rounded-xl border border-white/10 bg-slate-800/50 p-4; }
+  .kpi .num { @apply text-2xl font-extrabold; }
+  .input { @apply w-full rounded-xl border border-white/15 bg-slate-900/60 px-3 py-2 outline-none focus:ring-4 ring-blue-400/30; }
+  .tab { @apply rounded-xl border border-white/20 bg-slate-800/50 px-3 py-2 text-sm; }
+  .tab-active { @apply border-green-500/70 ring-2 ring-green-400/30; }
+}

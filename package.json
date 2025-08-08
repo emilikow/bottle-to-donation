@@ -1,7 +1,7 @@
 {
-  "name": "bottle-to-donation",
-  "version": "0.1.1",
+  "name": "bottle-to-donation-tailwind",
   "private": true,
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,10 +14,14 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "lucide-react": "^0.453.0",
     "clsx": "^2.1.0"
   },
   "devDependencies": {
     "vite": "^5.3.4",
-    "@vitejs/plugin-react": "^4.3.1"
+    "@vitejs/plugin-react": "^4.3.1",
+    "tailwindcss": "^3.4.7",
+    "postcss": "^8.4.41",
+    "autoprefixer": "^10.4.19"
   }
 }
