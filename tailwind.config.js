@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        bg: '#f7fafc' // Light background instead of dark
+        base44green: "#2ECC71", // Adjust hex if you have the exact Base44 green
       },
-      boxShadow: {
-        glow: '0 8px 24px -12px rgba(34,197,94,.45)'
-      }
     },
   },
   plugins: [],
-}
+};
